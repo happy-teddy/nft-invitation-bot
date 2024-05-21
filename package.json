@@ -1,0 +1,33 @@
+{
+  "name": "nft-bot",
+  "version": "0.0.1",
+  "description": "nft-bot+invitations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server --trace-warnings",
+    "prod": "pm2 start server.js",
+    "stop": "pm2 stop 0 && pm2 delete 0",
+    "unused": "find-unused-exports"
+  },
+  "author": "",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "forever": "^4.0.3",
+    "input": "^1.0.1",
+    "node-telegram-bot-api": "^0.57.0",
+    "pg": "^8.7.3",
+    "pm2": "^5.2.0",
+    "telegram": "^2.9.8",
+    "tonweb": "^0.0.46",
+    "tonweb-mnemonic": "^1.0.1"
+  },
+  "devDependencies": {
+    "find-unused-exports": "^3.0.0",
+    "nodemon": "^2.0.16"
+  },
+  "engines": {
+    "npm": ">=14.0.0",
+    "node": ">=6.0.0"
+  }
+}
